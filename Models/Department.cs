@@ -11,6 +11,6 @@ namespace Modify_Credit.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public int ManagerId { get; set; }
-        public Employee ManagerName { get; set; }
+        
     }
 }
