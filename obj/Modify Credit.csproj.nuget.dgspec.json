@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\New folder\\New folder\\Programming\\Modify Credit\\Modify Credit.csproj": {}
+    "d:\\New folder\\New folder\\Programming\\Modify Credit\\Modify Credit.csproj": {}
   },
   "projects": {
-    "D:\\New folder\\New folder\\Programming\\Modify Credit\\Modify Credit.csproj": {
+    "d:\\New folder\\New folder\\Programming\\Modify Credit\\Modify Credit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\New folder\\New folder\\Programming\\Modify Credit\\Modify Credit.csproj",
+        "projectUniqueName": "d:\\New folder\\New folder\\Programming\\Modify Credit\\Modify Credit.csproj",
         "projectName": "Modify Credit",
-        "projectPath": "D:\\New folder\\New folder\\Programming\\Modify Credit\\Modify Credit.csproj",
+        "projectPath": "d:\\New folder\\New folder\\Programming\\Modify Credit\\Modify Credit.csproj",
         "packagesPath": "C:\\Users\\Amirhosein.Damavandi\\.nuget\\packages\\",
-        "outputPath": "D:\\New folder\\New folder\\Programming\\Modify Credit\\obj\\",
+        "outputPath": "d:\\New folder\\New folder\\Programming\\Modify Credit\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Amirhosein.Damavandi\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,6 +37,22 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -7,6 +7,7 @@ namespace Modify_Credit.Models
 {
     public class LeaveRequestForm
     {
+        public long LeaveRequestId { get; set; }
         public int EmployeeId   { get; set; }
         public Employee Employee { get; set; }
         public DateTime LeaveDate   { get; set; }
