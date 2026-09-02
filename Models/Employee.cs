@@ -17,8 +17,7 @@ namespace Modify_Credit.Models
         public Department Department { get; set; }
         public int BranchId { get; set; }
         public Branch Branch { get; set; }
-        public int LeaveRequestId { get; set; }
-        public ICollection<LeaveRequestForm> LeaveRequestForm { get; set; }
+        public ICollection<LeaveRequestForm> LeaveRequestForms { get; set; }
         
     }
 }

@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Modify_Credit.Data;
 
 namespace Modify_Credit.Migrations
 {
     [DbContext(typeof(LeaveRequestDbContext))]
-    partial class LeaveRequestDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260902095438_CreatingConnectingModels")]
+    partial class CreatingConnectingModels
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

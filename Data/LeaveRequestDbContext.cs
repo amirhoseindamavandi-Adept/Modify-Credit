@@ -47,7 +47,7 @@ namespace Modify_Credit.Data
             modelBuilder.Entity<LeaveRequestForm>().Property(q=>q.EndHour).IsRequired();
             modelBuilder.Entity<LeaveRequestForm>().Property(q=>q.LeaveDate).IsRequired();
             modelBuilder.Entity<LeaveRequestForm>().Property(q=>q.StartHour).IsRequired();
-            modelBuilder.Entity<LeaveRequestForm>().HasOne(q=>q.Employee).WithMany(q=>q.LeaveRequestForm).HasForeignKey(q=>q.LeaveRequestId);
+            modelBuilder.Entity<LeaveRequestForm>().HasOne(q=>q.Employee).WithMany(q=>q.LeaveRequestForms).HasForeignKey(q=>q.EmployeeId);
             
 
             
