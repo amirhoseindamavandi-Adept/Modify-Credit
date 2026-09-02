@@ -13,7 +13,12 @@ namespace Modify_Credit.Models
         public string Family { get; set; }
         public int  NationalCode { get; set; }
         public string PhoneNumber { get; set; }
+        public int DepartmentId { get; set; }
         public Department Department { get; set; }
+        public int BranchId { get; set; }
         public Branch Branch { get; set; }
+        public int LeaveRequestId { get; set; }
+        public ICollection<LeaveRequestForm> LeaveRequestForm { get; set; }
+        
     }
 }

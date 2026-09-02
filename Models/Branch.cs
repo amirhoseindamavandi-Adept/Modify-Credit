@@ -9,8 +9,8 @@ namespace Modify_Credit.Models
 {
     public int BranchId { get; set; }
 
-    public string Name { get; set; }
+    public string BranchName { get; set; }
 
-    public List<Employee> employees { get; set; }
+    public ICollection<Employee> employees { get; set; }
 }
 }

@@ -25,7 +25,8 @@ namespace Modify_Credit.Data
             modelBuilder.Entity<Employee>().Property(q=>q.Family).HasMaxLength(255).IsRequired();
             modelBuilder.Entity<Employee>().Property(q=>q.NationalCode).HasMaxLength(10).IsRequired();         
             modelBuilder.Entity<Employee>().Property(q=>q.PhoneNumber).HasMaxLength(11).IsRequired();
-
+            modelBuilder.Entity<Employee>().HasOne(q=>q.Department).WithMany(q=>q.Employees).HasForeignKey(q=>q.DepartmentId);
+            modelBuilder.Entity<Employee>().HasOne(c=>c.Branch).WithMany(c=>c.employees).HasForeignKey(q=>q.BranchId);
             
 
 
@@ -36,7 +37,7 @@ namespace Modify_Credit.Data
 
 
             modelBuilder.Entity<Branch>().ToTable("branches").HasKey(q=>q.BranchId);
-            modelBuilder.Entity<Branch>().Property(q=>q.Name);
+            modelBuilder.Entity<Branch>().Property(q=>q.BranchName);
 
 
 
@@ -46,6 +47,7 @@ namespace Modify_Credit.Data
             modelBuilder.Entity<LeaveRequestForm>().Property(q=>q.EndHour).IsRequired();
             modelBuilder.Entity<LeaveRequestForm>().Property(q=>q.LeaveDate).IsRequired();
             modelBuilder.Entity<LeaveRequestForm>().Property(q=>q.StartHour).IsRequired();
+            modelBuilder.Entity<LeaveRequestForm>().HasOne(q=>q.Employee).WithMany(q=>q.LeaveRequestForm).HasForeignKey(q=>q.LeaveRequestId);
             
 
             
